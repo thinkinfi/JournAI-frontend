@@ -30,7 +30,7 @@ export default function Signup() {
         email: '',
         password: ''
     });
-    const [showSuggestions, setShowSuggestions] = useState(false);
+    const [showSuggestions, setShowSuggestions] = useState(true);
 
     useEffect(() => {
         if (snackbar) {
