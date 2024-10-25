@@ -22,7 +22,7 @@ export default function LandingPage() {
                         <div className="text-center">
                             <h1 className="text-4xl font-bold tracking-tight text-blue-600 mb-6">
                                 <FaMapMarkedAlt className="inline-block mr-2" />
-                                Effortless Travel Planning, Just for You
+                                AI Trip Planner
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-700">
                                 Planning a trip? Let us make it effortless. Share your preferences, and we'll craft a custom itinerary that fits your style and budget. From hidden gems to iconic spots, we've got everything covered. Start your adventure now and travel like never before!

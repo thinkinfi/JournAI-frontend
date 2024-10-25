@@ -79,8 +79,10 @@ export default function Signup() {
 
             if (response.status === 200) {
                 console.log(data);
-                setSnackbar({ message: 'Registered successfully. Please login to continue.', type: 'success' });
-                setTimeout(() => navigate('/login'), 1000);
+                localStorage.setItem('auth_token', data.token);
+                localStorage.setItem('user_id', data.id);
+                setSnackbar({ message: 'Registered successfully. Create your first trip!', type: 'success' });
+                setTimeout(() => navigate('/create-trip'), 1000);
             } else {
                 setSnackbar({ message: data.detail || 'An error occurred while signing up.', type: 'error' });
             }
