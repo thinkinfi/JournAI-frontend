@@ -98,8 +98,14 @@ export default function ViewTrips() {
                                     />
                                 ))
                             ) : (
-                                <p className="col-span-full text-center text-gray-600"> You do not have any trips. Please create your first trip 
-                                    <Link to="/create-trip">here</Link>
+                                <p className="col-span-full text-center text-gray-600"> 
+                                    You do not have any trips. Please create your first trip 
+                                    <Link 
+                                        to="/create-trip" 
+                                        className="text-blue-600 hover:text-blue-800 underline ml-1 transition-colors duration-200"
+                                    > 
+                                    here
+                                    </Link>
                                 </p>
                             )}
                         </div>
