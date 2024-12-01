@@ -98,7 +98,7 @@ export default function FavoriteTrips() {
                                     />
                                 ))
                             ) : (
-                                <p className="col-span-full text-center text-gray-600">No favorite trips available.</p>
+                                <p className="col-span-full text-center text-gray-600">You have not marked any trip as your favorite trip</p>
                             )}
                         </div>
                     ) 

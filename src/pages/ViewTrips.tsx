@@ -5,6 +5,7 @@ import axios from "axios";
 import Trip from "../interfaces/Trip";
 import TripCard from "../components/TripCard";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function ViewTrips() {
     const navigation = {
@@ -97,7 +98,9 @@ export default function ViewTrips() {
                                     />
                                 ))
                             ) : (
-                                <p className="col-span-full text-center text-gray-600">No trips available.</p>
+                                <p className="col-span-full text-center text-gray-600"> You do not have any trips. Please create your first trip 
+                                    <Link to="/create-trip">here</Link>
+                                </p>
                             )}
                         </div>
                     ) }
